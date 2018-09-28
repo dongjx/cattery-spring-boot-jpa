@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:postgresql://127.0.0.1:5432/probation_production
+      username: postgres
+      password:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    database: postgresql
+    properties:
+      hibernate:
+        ddl-auto: none
+        temp:
+          use_jdbc_metadata_defaults: false
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+        SQL: DEBUG
+
