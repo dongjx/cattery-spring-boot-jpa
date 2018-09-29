@@ -6,6 +6,7 @@ user spring-boot + jpa + psql + druid to set up a project
 
 ### Steps to run this project
 1. `git clone https://github.com/dongjx/cattery-spring-boot-jpa-druid.git`
+2. modify the `application.yml` to set your database config
 2. `cd cattery-spring-boot-jpa-druid`
 3. `./gradlew build`
 4. `./gradlew bootRun`
