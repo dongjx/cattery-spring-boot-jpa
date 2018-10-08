@@ -3,15 +3,20 @@ package com.cattery.role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/roles")
 public class RoleController {
     @Autowired
     private RoleRepository roleRepository;
 
+    @Autowired
+    private RoleService roleService;
+
     @GetMapping
     public Object index() {
-        Iterable<Role> roles = roleRepository.findAll();
+        List<Role> roles = roleService.findRoles();
         return roles;
     }
 
