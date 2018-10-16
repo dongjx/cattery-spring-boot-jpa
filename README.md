@@ -1,4 +1,4 @@
-# cattery-spring-boot-jpa-redis
+# spring-boot example
 use spring-boot + jpa + psql + druid + redis to set up a project    
 
 更多细节请查看：
